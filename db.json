@@ -1,0 +1,36 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Ocean View Room",
+      "description": "Calmness and comfort with a breathtaking ocean view.",
+      "image": "https://bakkara-hotel.com.ua/wp-content/uploads/2018/06/MG_4765_hdr-min-1902x1268.jpg",
+      "price": 280,
+      "type": "suite"
+    },
+    {
+      "id": 2,
+      "name": "Luxury Suite",
+      "description": "Indulge in ultimate comfort in our spacious Luxury Suite.",
+      "image": "https://alltravelgroup.com.ua/wp-content/uploads/2022/08/%D0%B3%D0%BE%D1%82%D0%B5%D0%BB%D1%96-1024x635.jpg",
+      "price": 320,
+      "type": "suite"
+    },
+    {
+      "id": 3,
+      "name": "Family Apartment",
+      "description": "Extra space and cozy atmosphere for families or groups.",
+      "image": "https://11mirrors-hotel.com/uploads/thumb/2014-2-485_381_design_hotel5_1.png",
+      "price": 220,
+      "type": "family"
+    },
+    {
+      "id": 4,
+      "name": "Standard Room",
+      "description": "Comfortable and affordable room for one or two guests.",
+      "image": "https://3.imimg.com/data3/IL/XU/MY-8679324/5-star-hotel-room-booking-service-500x500.jpg",
+      "price": 150,
+      "type": "standard"
+    }
+  ]
+}
