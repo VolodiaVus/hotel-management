@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CartButton from "../components/CartButton";
 import "../App.css";
 
 const Navigation = () => {
@@ -11,6 +12,11 @@ const Navigation = () => {
         <li><Link to="/bookings">Bookings</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
+
+        {/* Cart Button moved into nav */}
+        <li>
+          <CartButton />
+        </li>
       </ul>
     </nav>
   );

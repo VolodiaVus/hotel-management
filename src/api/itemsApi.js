@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/rooms";
+const API_URL = "http://localhost:8000/rooms";
 
 export const getAllRooms = () => axios.get(API_URL);
 

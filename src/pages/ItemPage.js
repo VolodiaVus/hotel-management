@@ -4,11 +4,14 @@ import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import { getRoomById } from "../api/itemsApi"; 
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/actions";
 import "../App.css";
 
 const ItemPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const [room, setRoom] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -29,6 +32,10 @@ const ItemPage = () => {
 
     load();
   }, [id]);
+
+  const handleAddToCart = () => {
+    dispatch(addToCart(room));
+  };
 
   if (loading) {
     return (
@@ -67,9 +74,12 @@ const ItemPage = () => {
 
             <div className="item-buttons">
               <button className="back-btn" onClick={() => navigate(-1)}>
-                ⬅ Go back
+                Go back
               </button>
-              <button className="primary-btn">Add to cart</button>
+
+              <button className="primary-btn" onClick={handleAddToCart}>
+                Add to cart
+              </button>
             </div>
           </div>
         </div>
